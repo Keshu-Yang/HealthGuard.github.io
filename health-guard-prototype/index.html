@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health Guard — In‑page Check</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="stage">
+    <div id="slide" role="img" aria-label="Slide showing an in-page claim-checking plugin overlaying a Hartford Hospital article.">
+      <div class="decor" aria-hidden="true">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+      </div>
+
+      <h1 class="headline">One click. In‑page check.</h1>
+      <p class="subhead">
+        Click the <strong>Health Guard</strong> shield in the top‑right of the browser window
+        <span class="kbd">R</span> to scan again • <span class="kbd">Esc</span> to close
+      </p>
+
+      <div class="browser" id="browser">
+        <div class="topbar">
+          <div class="window-controls" aria-hidden="true">
+            <span class="c1"></span>
+            <span class="c2"></span>
+            <span class="c3"></span>
+          </div>
+
+          <div class="address" title="https://hartfordhospital.org/about-hh/news-center/news-detail?articleid=47958">
+            <svg class="lock" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7.5 11V8.8C7.5 6.2 9.6 4.2 12.2 4.2C14.8 4.2 16.9 6.2 16.9 8.8V11" stroke="rgba(70,90,120,0.75)" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M6.6 11H17.8C18.8 11 19.6 11.8 19.6 12.8V18.3C19.6 19.3 18.8 20.1 17.8 20.1H6.6C5.6 20.1 4.8 19.3 4.8 18.3V12.8C4.8 11.8 5.6 11 6.6 11Z" fill="rgba(70,90,120,0.10)" stroke="rgba(70,90,120,0.55)" stroke-width="1.2"/>
+              <path d="M12.2 15.1V16.9" stroke="rgba(70,90,120,0.75)" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <div class="url">hartfordhospital.org/about-hh/news-center/news-detail?articleid=47958</div>
+          </div>
+
+          <div class="toolbar-actions">
+            <div class="hg-button" id="hg-btn" role="button" tabindex="0" aria-label="Toggle Health Guard">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2.4L19.4 6.6V12.2C19.4 17.1 16.4 21 12 22.2C7.6 21 4.6 17.1 4.6 12.2V6.6L12 2.4Z" fill="url(#grad)"/>
+                <path d="M8.7 12.3L11 14.7L15.5 9.6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="grad" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2F6FED"/>
+                    <stop offset="1" stop-color="#6A5CF6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="badge">Health Guard</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewport" id="viewport">
+          <div class="site">
+            <div class="site-top">
+              <div class="hh-logo" aria-label="Hartford Hospital">
+                <div class="mark" aria-hidden="true"></div>
+                <div class="text">Hartford Hospital</div>
+              </div>
+              <div class="site-nav" aria-hidden="true">
+                <span>Find a Doctor</span>
+                <span>Services</span>
+                <span>Patients &amp; Visitors</span>
+                <span>News</span>
+              </div>
+            </div>
+
+            <div class="article" id="article">
+              <div class="hero"><div class="imglabel">Article header image</div></div>
+
+              <h1>10 “Silent” Signs of a Heart Attack That You Should Know</h1>
+              <div class="meta">February 22, 2023 • News Center</div>
+
+              <p>
+                Chest pain and shortness of breath are widely recognized heart‑attack symptoms.
+                But some warning signs can be subtle and easier to overlook.
+              </p>
+
+              <div class="quote">
+                “It’s not chest pain, it’s pressure.”
+              </div>
+
+              <h2>Silent heart attack signs you might ignore</h2>
+              <ul>
+                <li><strong>Chest pressure</strong> (a heavy or squeezing feeling).</li>
+                <li><strong>Unusual fatigue</strong> that is out of proportion to activity.</li>
+                <li><strong>Shortness of breath</strong>, especially with simple exertion.</li>
+                <li><strong>Sudden sweating</strong> without clear cause.</li>
+                <li>
+                  <mark class="claim" id="claimTarget">Sense of doom</mark> — a sudden feeling that something is very wrong.
+                </li>
+              </ul>
+
+              <p>
+                The goal is to recognize patterns and seek appropriate care when symptoms are concerning.
+                Individuals can experience symptoms differently.
+              </p>
+
+              <h2>Why symptoms can be “silent”</h2>
+              <p>
+                Some people don’t feel classic chest pain. Others notice vague, flu‑like symptoms or just
+                “not feeling right.” Factors like age, stress, and other medical conditions can also change
+                how symptoms present.
+              </p>
+              <p>
+                That’s why clear, reputable information matters — especially for claims that sound medical
+                or urgent. Health Guard checks whether a statement is consistent with high‑quality sources.
+              </p>
+
+              <h2>Other atypical symptoms (examples)</h2>
+              <ul>
+                <li>Discomfort that radiates to the jaw, neck, back, or arms.</li>
+                <li>Nausea, indigestion, or stomach discomfort.</li>
+                <li>Dizziness or lightheadedness.</li>
+                <li>Sleep disturbance or sudden weakness.</li>
+              </ul>
+
+              <h2>When to call for emergency help</h2>
+              <p>
+                If symptoms are sudden, severe, or feel unusual for you, don’t try to “wait it out.”
+                Seek emergency evaluation.
+              </p>
+              <div class="quote">
+                If you think you may be having a heart attack, call your local emergency number.
+              </div>
+
+              <h2>What Health Guard checks on a page</h2>
+              <p>
+                Health Guard detects sentence‑level claims (for example, “X causes Y” or “symptom Z means
+                condition Q”). It then matches those claims to a curated set of medical references.
+              </p>
+              <p>
+                The panel on the right summarizes: the claim, a confidence score, and a plain‑language
+                explanation of what the sources say.
+              </p>
+
+              <h2>Related topics</h2>
+              <ul>
+                <li>Risk factors and prevention basics</li>
+                <li>What to do while waiting for help</li>
+                <li>Recovery and follow‑up care</li>
+                <li>Understanding cardiac rehab</li>
+              </ul>
+
+              <p style="font-size:12px;color:rgba(70,90,120,0.8);">
+                Read the full article on Hartford Hospital:
+                <a href="https://hartfordhospital.org/about-hh/news-center/news-detail?articleid=47958" target="_blank" rel="noopener noreferrer">Open the original article</a>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bubble anchored to the highlighted claim -->
+          <div class="claim-bubble" id="hg-bubble" aria-hidden="true">
+            <div class="bubble-title">Claim flagged</div>
+            <div class="bubble-sub" id="hg-bubble-sub">…</div>
+          </div>
+
+          <!-- Right-side plugin panel -->
+          <aside class="plugin-panel" id="hg-panel" aria-hidden="true">
+            <div class="panel-header">
+              <div class="panel-title">
+                <img src="assets/shield.svg" alt="" aria-hidden="true" />
+                Health Guard
+              </div>
+              <button class="panel-close" id="hg-close" type="button" aria-label="Close panel">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 7L17 17" stroke="rgba(40,60,90,0.8)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M17 7L7 17" stroke="rgba(40,60,90,0.8)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="panel-body">
+              <div id="hg-scan">
+                <div class="section-label">Checking this page…</div>
+                <div class="progress" aria-hidden="true"><div></div></div>
+                <div class="explainer">
+                  Scanning for health‑related claims, citations, and AI‑generated text signals.
+                </div>
+              </div>
+
+              <div id="hg-result" class="hidden">
+                <div class="section-label">Claim detected</div>
+                <div class="claim-line" id="hg-claim-text">…</div>
+
+                <div class="status-row">
+                  <div class="pill good" id="hg-status-pill">Likely supported</div>
+                  <div class="conf">Confidence: <strong id="hg-conf">0.00</strong></div>
+                </div>
+
+                <div class="section-label">Possible AI detection</div>
+                <div class="status-row">
+                  <div class="pill warn" id="hg-ai-pill">AI-generated: Possible</div>
+                  <div class="conf">AI score: <strong id="hg-ai-score">0.00</strong></div>
+                </div>
+                <div class="explainer" id="hg-ai-explainer">…</div>
+
+                <div class="section-label">Sources</div>
+                <div class="sources" id="hg-sources"></div>
+
+                <div class="section-label">Plain‑language explanation</div>
+                <div class="explainer" id="hg-explainer">…</div>
+
+                <div class="disclaimer">Not medical advice.</div>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <a href="https://hartfordhospital.org/about-hh/news-center/news-detail?articleid=47958" target="_blank" rel="noopener noreferrer">Open article</a>
+              <button id="hg-replay" type="button">Scan again</button>
+            </div>
+          </aside>
+
+          <div class="cursor-hint" id="hg-cursor" aria-hidden="true">
+            <img src="assets/cursor-hand.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
